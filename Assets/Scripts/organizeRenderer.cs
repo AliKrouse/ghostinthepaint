@@ -9,6 +9,8 @@ public class organizeRenderer : MonoBehaviour
 	protected virtual void Start ()
     {
         sr = GetComponent<SpriteRenderer>();
+
+        Organize();
 	}
 
     protected virtual void Organize()
