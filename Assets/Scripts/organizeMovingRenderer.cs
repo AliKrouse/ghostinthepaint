@@ -4,8 +4,21 @@ using UnityEngine;
 
 public class organizeMovingRenderer : organizeRenderer
 {
-	void Update ()
+    private Transform foot;
+
+    protected override void Start()
+    {
+        foot = transform.GetChild(0);
+        base.Start();
+    }
+
+    void Update ()
     {
         Organize();
 	}
+
+    protected override void Organize()
+    {
+        sr.sortingOrder = Mathf.RoundToInt(foot.position.y * -100);
+    }
 }

@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28546837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.98, y: -16.4, z: 0}
+  m_LocalPosition: {x: 8.01, y: -17.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -407,6 +407,7 @@ Transform:
   m_LocalPosition: {x: 9.74, y: 12.18, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children:
+  - {fileID: 1662937241}
   - {fileID: 1580199603}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -810,7 +811,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (3)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1076,6 +1077,34 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &238786036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 238786037}
+  m_Layer: 0
+  m_Name: foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &238786037
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238786036}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1651903677}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246865623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1303,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445200412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.42, y: -0.88, z: 0}
+  m_LocalPosition: {x: -8.89, y: -1.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -1291,7 +1320,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (1)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1502,7 +1531,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 613377038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.59, y: 14.28, z: 0}
+  m_LocalPosition: {x: 1.56, y: 13.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -1776,7 +1805,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 842954757}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.66, y: -4.07, z: 0}
+  m_LocalPosition: {x: 10.34, y: -4.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -2812,7 +2841,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (7)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2926,7 +2955,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1210488296}
   m_LocalRotation: {x: -0, y: -0, z: 0.2384804, w: 0.9711473}
-  m_LocalPosition: {x: 0.44, y: 6.96, z: 0}
+  m_LocalPosition: {x: 1.31, y: 5.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -3027,7 +3056,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3723,7 +3752,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1474589167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.49, y: -17.2, z: 0}
+  m_LocalPosition: {x: -8.37, y: -18.27, z: 0}
   m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -3740,7 +3769,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (2)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3925,7 +3954,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1563315686}
   m_LocalRotation: {x: -0, y: -0, z: 0.685795, w: 0.72779477}
-  m_LocalPosition: {x: -6.89, y: 3.04, z: 0}
+  m_LocalPosition: {x: -5.66, y: 2.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -3942,7 +3971,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (4)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4039,7 +4068,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 110776320}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1580199604
 AudioSource:
@@ -4362,7 +4391,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.69, y: 11.03, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 238786037}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4390,7 +4420,7 @@ Animator:
   m_GameObject: {fileID: 1651903675}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58f7f9a99d5389a44bd3eb03749b033a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4531,7 +4561,7 @@ MonoBehaviour:
   - {fileID: 1401817995}
   - {fileID: 1954441635}
   speed: 3
-  pauseTime: 0
+  pauseTime: 2
   tagPoints:
   - {fileID: 1210488297}
   - {fileID: 1563315687}
@@ -4541,6 +4571,7 @@ MonoBehaviour:
   - {fileID: 613377039}
   - {fileID: 445200413}
   - {fileID: 2080633668}
+  tagLayers: 53fbffffabfcffff0180ffff0180ffff0180ffff0180ffff8bfeffff0180ffff
   tags:
   - {fileID: 21300000, guid: c217dd4a0d80c5f468bba65f2b863f86, type: 3}
   - {fileID: 21300000, guid: 0f3e60adcc3034649985f6f2c58ddf17, type: 3}
@@ -4551,6 +4582,35 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 120a96a1c9dcbc34db66427a0bf48fc0, type: 3}
   - {fileID: 21300000, guid: b1745bd768d574b4fb0bc9afb4b7d439, type: 3}
   tagPrefab: {fileID: 1491153424567902, guid: cc91146ee51cf0f4ab775a82cf694d23, type: 2}
+  lastTag: {fileID: 1117049209044444, guid: c263c958ce2038343a312eb4face5865, type: 2}
+--- !u!1 &1662937240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1662937241}
+  m_Layer: 0
+  m_Name: foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1662937241
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662937240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 110776320}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666507630
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,7 +5124,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (6)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6066,7 +6126,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2080633667}
   m_LocalRotation: {x: -0, y: -0, z: 0.73820823, w: 0.6745729}
-  m_LocalPosition: {x: -16.04, y: -5.59, z: 0}
+  m_LocalPosition: {x: -14.88, y: -5.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1083477392}
@@ -6156,7 +6216,7 @@ GameObject:
   m_Layer: 0
   m_Name: tag point (5)
   m_TagString: tagging point
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

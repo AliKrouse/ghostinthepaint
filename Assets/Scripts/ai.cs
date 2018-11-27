@@ -14,9 +14,11 @@ public class ai : MonoBehaviour
     public float speed;
     public float pauseTime;
     public Transform[] tagPoints;
+    public int[] tagLayers;
     private int tagIndex;
     public List<Sprite> tags;
     public GameObject tagPrefab;
+    public GameObject lastTag;
 
     bool coroutineIsRunning;
     
@@ -46,6 +48,46 @@ public class ai : MonoBehaviour
                     index++;
                 }
             }
+
+            Vector2 direction = (transform.position - waypoints[index].position).normalized;
+            if (direction.x < 0)
+                sr.flipX = false;
+            else
+                sr.flipX = true;
+
+            if (Mathf.Abs(direction.x) > 0.25)
+            {
+                anim.SetBool("lr", true);
+                anim.SetBool("front", false);
+                anim.SetBool("back", false);
+            }
+            else
+            {
+                if (direction.y > 0)
+                {
+                    anim.SetBool("back", false);
+                    anim.SetBool("front", true);
+                    anim.SetBool("lr", false);
+                }
+                if (direction.y < 0)
+                {
+                    anim.SetBool("front", false);
+                    anim.SetBool("back", true);
+                    anim.SetBool("lr", false);
+                }
+            }
+            if (coroutineIsRunning)
+            {
+                anim.SetBool("moving", false);
+            }
+            else
+            {
+                anim.SetBool("moving", true);
+            }
+        }
+        if (index == waypoints.Length && !coroutineIsRunning)
+        {
+            StartCoroutine(LastTag());
         }
 	}
 
@@ -60,10 +102,22 @@ public class ai : MonoBehaviour
         GameObject t = Instantiate(tagPrefab, tagPoints[tagIndex].position, tagPoints[tagIndex].rotation);
         int randomTag = Random.Range(0, tags.Count);
         t.GetComponent<SpriteRenderer>().sprite = tags[randomTag];
+        t.GetComponent<SpriteRenderer>().sortingOrder = tagLayers[tagIndex];
         tags.RemoveAt(randomTag);
         yield return new WaitForSeconds(0.25f);
         tagIndex++;
         index++;
         coroutineIsRunning = false;
+    }
+
+    private IEnumerator LastTag()
+    {
+        coroutineIsRunning = true;
+        float think = Random.Range(5f, 10f);
+        yield return new WaitForSeconds(think);
+        source.Play();
+        yield return new WaitForSeconds(pauseTime);
+        source.Stop();
+        GameObject t = Instantiate(lastTag);
     }
 }
