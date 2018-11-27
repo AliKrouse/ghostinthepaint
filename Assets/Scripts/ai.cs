@@ -38,6 +38,7 @@ public class ai : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, waypoints[index].position, Time.deltaTime * speed);
             float distance = Vector2.Distance(transform.position, waypoints[index].position);
+            Vector2 direction = (transform.position - waypoints[index].position).normalized;
 
             if (distance < float.Epsilon)
             {
@@ -50,8 +51,7 @@ public class ai : MonoBehaviour
                     index++;
                 }
             }
-
-            Vector2 direction = (transform.position - waypoints[index].position).normalized;
+            
             if (direction.x < 0)
                 sr.flipX = false;
             else
@@ -78,14 +78,14 @@ public class ai : MonoBehaviour
                     anim.SetBool("lr", false);
                 }
             }
-            if (coroutineIsRunning)
-            {
-                anim.SetBool("moving", false);
-            }
-            else
-            {
-                anim.SetBool("moving", true);
-            }
+        }
+        if (coroutineIsRunning)
+        {
+            anim.SetBool("moving", false);
+        }
+        else
+        {
+            anim.SetBool("moving", true);
         }
         if (index == waypoints.Length && !coroutineIsRunning)
         {

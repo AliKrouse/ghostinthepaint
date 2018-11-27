@@ -20,6 +20,9 @@ public class gameController : MonoBehaviour
     public AudioClip close;
 
     bool quietSource;
+    bool kissing;
+
+    bool coroutineIsRunning;
 
 	void Start ()
     {
@@ -27,6 +30,9 @@ public class gameController : MonoBehaviour
         movement = transform.GetChild(1).gameObject;
         spray = transform.GetChild(2).gameObject;
         kiss = transform.GetChild(3).gameObject;
+
+        panim = player.gameObject.GetComponent<Animator>();
+        aanim = aiController.gameObject.GetComponent<Animator>();
 
         tagScript = player.gameObject.GetComponent<paintTag>();
 
@@ -49,12 +55,24 @@ public class gameController : MonoBehaviour
             float d = Vector2.Distance(player.gameObject.transform.position, aiController.gameObject.transform.position);
             if (d < 2)
                 kiss.SetActive(true);
-            if (kiss.activeSelf && Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                kissing = true;
+                kiss.GetComponent<fadeUI>().setOff = true;
+            }
+            if (kiss.activeSelf && kissing)
             {
                 player.gameObject.transform.position = Vector2.MoveTowards(player.gameObject.transform.position, aiController.gameObject.transform.position, Time.deltaTime * aiController.speed);
                 player.enabled = false;
+                player.gameObject.GetComponent<ParticleSystem>().Stop();
                 aiController.enabled = false;
-                if (d < 0.7f)
+                player.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+                aiController.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+                player.gameObject.GetComponent<organizeMovingRenderer>().enabled = false;
+                aiController.gameObject.GetComponent<organizeMovingRenderer>().enabled = false;
+                player.gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
+                aiController.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                if (d < 0.7f && !coroutineIsRunning)
                     StartCoroutine(EndGame());
             }
         }
@@ -88,7 +106,9 @@ public class gameController : MonoBehaviour
 
     private IEnumerator EndGame()
     {
+        coroutineIsRunning = true;
         panim.SetTrigger("kiss");
+        aiController.gameObject.GetComponent<SpriteRenderer>().flipX = false;
         aanim.SetTrigger("kiss");
         yield return new WaitForSeconds(3);
         aanim.SetTrigger("end");
