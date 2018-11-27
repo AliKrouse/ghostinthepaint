@@ -10,12 +10,16 @@ public class playerController : MonoBehaviour
 
     private Vector2 up, down, left, right;
     public float speed;
+
+    public GameObject ai;
+    private ParticleSystem hearts;
     
 	void Start ()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        hearts = GetComponent<ParticleSystem>();
 	}
 	
 	void Update ()
@@ -55,11 +59,6 @@ public class playerController : MonoBehaviour
 
         rb.velocity = up + down + left + right;
 
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-
-        }
-
 
         if (rb.velocity != Vector2.zero)
         {
@@ -93,5 +92,17 @@ public class playerController : MonoBehaviour
         {
             anim.SetBool("moving", false);
         }
-	}
+
+        float d = Vector2.Distance(transform.position, ai.transform.position);
+        if (d <= 3)
+        {
+            if (!hearts.isPlaying)
+                hearts.Play();
+        }
+        else
+        {
+            if (hearts.isPlaying)
+                hearts.Stop();
+        }
+    }
 }

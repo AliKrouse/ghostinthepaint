@@ -21,6 +21,8 @@ public class ai : MonoBehaviour
     public GameObject lastTag;
 
     bool coroutineIsRunning;
+
+    public gameController gc;
     
 	void Start ()
     {
@@ -119,5 +121,6 @@ public class ai : MonoBehaviour
         yield return new WaitForSeconds(pauseTime);
         source.Stop();
         GameObject t = Instantiate(lastTag);
+        gc.finalTagAnimator = t.GetComponent<Animator>();
     }
 }
