@@ -1,36 +1,36 @@
 fileFormatVersion: 2
-guid: f2aa4e9cec0abdc48a14eeed56d6b702
-timeCreated: 1543276138
+guid: 692e1f8faaa0155479244e1657c36570
+timeCreated: 1543280667
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: k_0
-    21300002: k_1
-    21300004: k_2
-    21300006: k_3
-    21300008: k_4
-    21300010: k_5
-    21300012: k_6
-    21300014: k_7
-    21300016: k_8
-    21300018: k_9
-    21300020: k_10
-    21300022: k_11
-    21300024: k_12
-    21300026: k_13
-    21300028: k_14
-    21300030: k_15
-    21300032: k_16
-    21300034: k_17
-    21300036: k_18
-    21300038: k_19
-    21300040: k_20
-    21300042: k_21
-    21300044: k_22
-    21300046: k_23
-    21300048: k_24
-    21300050: k_25
-    21300052: k_26
+    21300000: k3_0
+    21300002: k3_1
+    21300004: k3_2
+    21300006: k3_3
+    21300008: k3_4
+    21300010: k3_5
+    21300012: k3_6
+    21300014: k3_7
+    21300016: k3_8
+    21300018: k3_9
+    21300020: k3_10
+    21300022: k3_11
+    21300024: k3_12
+    21300026: k3_13
+    21300028: k3_14
+    21300030: k3_15
+    21300032: k3_16
+    21300034: k3_17
+    21300036: k3_18
+    21300038: k3_19
+    21300040: k3_20
+    21300042: k3_21
+    21300044: k3_22
+    21300046: k3_23
+    21300048: k3_24
+    21300050: k3_25
+    21300052: k3_26
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -137,7 +137,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: k_0
+      name: k3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_1
+      name: k3_1
       rect:
         serializedVersion: 2
         x: 160
@@ -165,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_2
+      name: k3_2
       rect:
         serializedVersion: 2
         x: 320
@@ -179,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_3
+      name: k3_3
       rect:
         serializedVersion: 2
         x: 480
@@ -193,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_4
+      name: k3_4
       rect:
         serializedVersion: 2
         x: 640
@@ -207,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_5
+      name: k3_5
       rect:
         serializedVersion: 2
         x: 800
@@ -221,7 +221,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_6
+      name: k3_6
       rect:
         serializedVersion: 2
         x: 0
@@ -235,7 +235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_7
+      name: k3_7
       rect:
         serializedVersion: 2
         x: 160
@@ -249,7 +249,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_8
+      name: k3_8
       rect:
         serializedVersion: 2
         x: 320
@@ -263,7 +263,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_9
+      name: k3_9
       rect:
         serializedVersion: 2
         x: 480
@@ -277,7 +277,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_10
+      name: k3_10
       rect:
         serializedVersion: 2
         x: 640
@@ -291,7 +291,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_11
+      name: k3_11
       rect:
         serializedVersion: 2
         x: 800
@@ -305,7 +305,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_12
+      name: k3_12
       rect:
         serializedVersion: 2
         x: 0
@@ -319,7 +319,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_13
+      name: k3_13
       rect:
         serializedVersion: 2
         x: 160
@@ -333,7 +333,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_14
+      name: k3_14
       rect:
         serializedVersion: 2
         x: 320
@@ -347,7 +347,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_15
+      name: k3_15
       rect:
         serializedVersion: 2
         x: 480
@@ -361,7 +361,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_16
+      name: k3_16
       rect:
         serializedVersion: 2
         x: 640
@@ -375,7 +375,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_17
+      name: k3_17
       rect:
         serializedVersion: 2
         x: 800
@@ -389,7 +389,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_18
+      name: k3_18
       rect:
         serializedVersion: 2
         x: 0
@@ -403,7 +403,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_19
+      name: k3_19
       rect:
         serializedVersion: 2
         x: 160
@@ -417,7 +417,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_20
+      name: k3_20
       rect:
         serializedVersion: 2
         x: 320
@@ -431,7 +431,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_21
+      name: k3_21
       rect:
         serializedVersion: 2
         x: 480
@@ -445,7 +445,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_22
+      name: k3_22
       rect:
         serializedVersion: 2
         x: 640
@@ -459,7 +459,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_23
+      name: k3_23
       rect:
         serializedVersion: 2
         x: 800
@@ -473,7 +473,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_24
+      name: k3_24
       rect:
         serializedVersion: 2
         x: 0
@@ -487,7 +487,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_25
+      name: k3_25
       rect:
         serializedVersion: 2
         x: 160
@@ -501,7 +501,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: k_26
+      name: k3_26
       rect:
         serializedVersion: 2
         x: 320
