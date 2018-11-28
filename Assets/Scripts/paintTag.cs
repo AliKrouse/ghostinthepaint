@@ -38,8 +38,9 @@ public class paintTag : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                GameObject newTag = Instantiate(tagBase);
+                GameObject newTag = Instantiate(tagBase, transform.position, Quaternion.identity);
                 tagLine = newTag.GetComponent<LineRenderer>();
+                tagLine.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder;
                 tagLine.startColor = paintColor;
                 tagLine.endColor = paintColor;
                 tagLine.startWidth = paintSize;
